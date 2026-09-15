@@ -38,4 +38,12 @@ O programa possui as seguintes funcionalidades:
 -  Verifica se ocorreram 3 temperaturas consecutivas acima do limite;
 -  Exibe um relatório final com os resultados.
 
----
+## Escolha das estruturas de repetição
+
+Escolhi utilizar principalmente a estrutura `do...while`, pois ela permite que o programa execute pelo menos uma vez antes de verificar a condição. Isso foi importante principalmente na leitura das temperaturas, pois o programa precisa solicitar pelo menos uma temperatura antes de perguntar se o usuário deseja continuar inserindo outras.
+
+Também utilizei `do...while` para validar o limite de temperatura. Dessa forma, o programa solicita o limite pelo menos uma vez e continua solicitando enquanto o valor informado estiver fora do intervalo permitido.
+
+A diferença entre testar a condição antes ou depois da execução foi importante porque, nesse caso, a primeira entrada sempre precisa ser realizada antes de verificar se o usuário deseja continuar. Se fosse utilizado apenas `while`, seria necessário fazer uma verificação antes da primeira leitura, tornando essa parte do algoritmo mais complexa.
+
+Portanto, o `do...while` foi escolhido porque se adapta melhor às situações em que pelo menos uma execução é obrigatória, enquanto a condição determina se o processo deve continuar.
